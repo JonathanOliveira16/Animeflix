@@ -1,0 +1,197 @@
+/*Geral*/
+body {
+    background-color: #000;
+}
+
+header {
+    padding: 50px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 69) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    text-decoration: none;
+}
+
+header img {
+    align-items: left;
+    size-adjust: 40px;
+}
+
+.btn-custom-white {
+    background-color: #fff;
+}
+
+.btn-custom-translucent {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-custom-translucent:hover {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.btn-custom-white:hover {
+    opacity: 0.8;
+}
+
+.btn-custom-round {
+    padding: 5px 9px !important;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+
+}
+
+/*Login*/
+.bg-anime {
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login-form, #cadastro-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 150px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#cadastro-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/*Home*/
+.menu_list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+}
+
+.menu_list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu_list li a {
+    color: #fff;
+}
+
+#hero {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#hero::after {
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: calc(700px - 350px);
+}
+
+#hero_infos {
+    padding: 0;
+    margin-top: 250px;
+    z-index: 3;
+    position: relative;
+}
+
+#hero_infos h1 {
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+
+#hero_infos h2 {
+    margin-bottom: 20px
+}
+
+#main-content {
+    margin-top: 700px;
+}
+
+.anime_lista {
+    overflow-x: scroll;
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: block;
+}
+
+.anime_lista::-webkit-scrollbar {
+    display: none;
+}
+
+.anime {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.anime:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transform: 0.5;
+}
+
+.anime:first-child {
+    margin-left: 20px;
+}
+
+.anime_info {
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+}
+
+.anime_info .col-12 {
+    margin-top: 5px;
+}
+
+.anime_info .col-12:first-child {
+    margin-bottom: 20px;
+}
+
+.anime_info p {
+    color: #7E7B7B;
+    font-size: 12px;
+}
+
+.anime_info p text {
+    color: #fff;
+}
+
+section {
+    position: relative;
+}
+
+section:hover {
+    z-index: 9;
+}
